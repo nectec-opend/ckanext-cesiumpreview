@@ -4,7 +4,8 @@ ckan.module('cesiumpreview', function (jQuery, _) {
         initialize: function () {
             var self = this;
 
-            var vis_server = 'https://nationalmap.gov.au/';
+            var vis_server = 'https://vmcatalog.nso.go.th/';
+	   // var vis_server = 'https://nationalmap.gov.au/';
 
             var config = {
                 "version": "0.0.03",
@@ -26,10 +27,10 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                     }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
-                        "west": 105,
-                        "south": -45,
-                        "east": 155,
-                        "north": -5
+			"north": -8,
+			"east": 155,
+			"south": -45,
+			"west": 105
                     }
 
                 }

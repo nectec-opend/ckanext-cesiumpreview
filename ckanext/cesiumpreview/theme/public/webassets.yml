@@ -1,0 +1,11 @@
+main:
+  filter: rjsmain
+  output: ckanext-cesiumpreview/%(version)s_cesiumpreview.js
+  extra:
+    preload:
+      - base/main
+  contents:  
+    - ./geojson-extent.js
+    - ./preview_cesium.js
+
+
