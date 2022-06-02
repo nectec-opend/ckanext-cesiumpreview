@@ -27,12 +27,33 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                     }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
-			"north": -8,
-			"east": 155,
-			"south": -45,
-			"west": 105
+                        "north": 83,
+                        "east": 135,
+                        "south": -55,
+                        "west": 66,
+                        "lookAt": {
+                            "targetLongitude": 100.5633786,
+                            "targetLatitude": 13.8819295,
+                            "targetHeight": 1500000,
+                            "heading": 0,
+                            "pitch": 90,
+                            "range": 1000
+                        }
+                    },
+                    "initialCamera": {
+                        "north": 83,
+                        "east": 135,
+                        "south": -55,
+                        "west": 66,
+                        "lookAt": {
+                            "targetLongitude": 100.5633786,
+                            "targetLatitude": 13.8819295,
+                            "targetHeight": 1450000,
+                            "heading": 0,
+                            "pitch": 90,
+                            "range": 1000
+                        }
                     }
-
                 }
                 ]
 
