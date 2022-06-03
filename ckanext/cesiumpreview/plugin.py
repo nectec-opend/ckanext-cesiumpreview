@@ -2,7 +2,7 @@ import logging
 
 import ckan.plugins as p
 
-from ckan.common import json
+from ckan.common import json, config
 
 log = logging.getLogger(__name__)
 
@@ -12,10 +12,17 @@ try:
 except ImportError:
     pass
 
+
+def get_cesium_vis_server():
+    con_vis_server = config.get('ckanext.cesium.vis_server')
+    log.info(con_vis_server)
+    return con_vis_server
+
 class CesiumPreview(p.SingletonPlugin):
     '''This extension adds Cesium. '''
     p.implements(p.IConfigurer, inherit=True)
     p.implements(p.IConfigurable, inherit=True)
+    p.implements(p.ITemplateHelpers)
     if p.toolkit.check_ckan_version('2.3'):
         p.implements(p.IResourceView, inherit=True)
     else:
@@ -59,6 +66,11 @@ class CesiumPreview(p.SingletonPlugin):
         if format_lower in self.Cesium_Formats:
 	    return True
         return False
+    
+    def get_helpers(self):
+        return {
+            'vis_server': get_cesium_vis_server
+        }
 
 #    def setup_template_variables(self, context, data_dict):
 #        if (self.proxy_is_enabled

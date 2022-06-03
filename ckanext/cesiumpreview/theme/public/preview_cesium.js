@@ -4,7 +4,8 @@ ckan.module('cesiumpreview', function (jQuery, _) {
         initialize: function () {
             var self = this;
 
-            var vis_server = 'https://vmcatalog.nso.go.th/';
+            var vis_server = this.options.vis_server;
+            // var vis_server = 'https://vmcatalog.nso.go.th/';
 	   // var vis_server = 'https://nationalmap.gov.au/';
 
             var config = {
