@@ -104,9 +104,6 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             var display = 'allowFullScreen mozAllowFullScreen webkitAllowFullScreen';
 
             var html = '<iframe src="' + vis_server + '#clean&hideExplorerPanel=1&start=' + encoded_config + '" style="' + style + '" ' + display + '></iframe>';
-
-            console.log(html);
-
             self.el.html(html);
         }
     };
