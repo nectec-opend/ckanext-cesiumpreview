@@ -24,8 +24,20 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isOpen": true,
                             "isEnabled": true,
                             "url": "http://"
-                        }]
-                    }],
+                        	}]
+                    },
+		    {
+	             	"id": "6ada988252b4",
+	    		"type": "sdmx-group",
+    	    		"name": "TNSO Data Hub",
+	    		"url": "https://ns1-oshub.nso.go.th/rest"
+	    	   },    
+        	   {
+            		"id": "6ada988252b5",
+            		"type": "sdmx-group",
+            		"name": "Pacific Data Hub",
+            		"url": "https://stats-nsi-stable.pacificdata.org/rest"
+        	   }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
                         "north": 83,
