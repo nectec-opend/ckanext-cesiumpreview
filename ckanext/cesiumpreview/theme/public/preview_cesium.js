@@ -24,13 +24,14 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isOpen": true,
                             "isEnabled": true,
                             "url": "http://"
-                    }]
-                    },{
+                        },
+		        ,{
             "id": "58b57301b7e0",
             "type": "esri-group",
             "name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
             "url": "https://gisportal.dmr.go.th/arcgis/rest/services/HAZARD/LANDSLIDE_SUSCEPTIBILITY/MapServer"
-        }],
+        }]
+                    }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
                         "north": 83,
