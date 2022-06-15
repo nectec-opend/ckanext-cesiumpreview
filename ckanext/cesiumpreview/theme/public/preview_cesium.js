@@ -30,7 +30,12 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                 "name": "จำนวนประชากรในประเทศไทย (2562)",
                 "id": "zrPtHVJcPi",
                 "url": "https://data.opendevelopmentmekong.net/geoserver/ODMekong/populationthailand_th/wms"
-            }]
+            },{
+            "id": "58b57301b7e0",
+            "type": "esri-group",
+            "name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
+            "url": "https://gisportal.dmr.go.th/arcgis/rest/services/HAZARD/LANDSLIDE_SUSCEPTIBILITY/MapServer"
+        }]
                     }],
                     "catalogIsUserSupplied": true,
 		    "initializationUrls": ["https://vmcatalog.nso.go.th/init/simple.json"],
