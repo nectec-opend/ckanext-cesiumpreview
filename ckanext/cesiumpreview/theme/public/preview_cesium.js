@@ -38,7 +38,6 @@ ckan.module('cesiumpreview', function (jQuery, _) {
         }]
                     }],
                     "catalogIsUserSupplied": true,
-		    "initializationUrls": ["https://vmcatalog.nso.go.th/init/simple.json"],
                     "homeCamera": {
                         "north": 83,
                         "east": 135,
