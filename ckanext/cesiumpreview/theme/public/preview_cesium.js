@@ -25,18 +25,11 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isEnabled": true,
                             "url": "http://"
                     }]
-                    },
-		    {
-	    		"type": "esri-mapServer",
-    	    		"name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
-	    		"url": "https://gisportal.dmr.go.th/arcgis/rest/services/HAZARD/LANDSLIDE_SUSCEPTIBILITY/MapServer/0",
-			"layers": "0"
-	    	   },{
-             "type": "esri-mapServer",
-             "name": "Catchment Scale Land Use",
-             "id": "354db2f2",
-             "url": "https://www.asris.csiro.au/arcgis/rest/services/abares/clum_50m_2018/MapServer",
-             "forceProxy": true
+                    },{
+            "id": "58b57301b7e0",
+            "type": "esri-group",
+            "name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
+            "url": "https://gisportal.dmr.go.th/arcgis/rest/services/HAZARD/LANDSLIDE_SUSCEPTIBILITY/MapServer"
         }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
