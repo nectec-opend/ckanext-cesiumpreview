@@ -18,7 +18,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                         "description": "The group for data that was added by the user via the Add Data panel.",
                         "isUserSupplied": true,
                         "isOpen": true,
-                        "members": [{
+                        "items": [{
                             "type": "kml",
                             "name": "User Data",
                             "isUserSupplied": true,
@@ -71,7 +71,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                     config["initSources"][0]['homeCamera']['north'] = extent[3];
                 }
             }
-            var zero_item = config["initSources"][0]['catalog'][0]['members'][0];
+            var zero_item = config["initSources"][0]['catalog'][0]['items'][0];
 
             zero_item['url'] = preload_resource['url'];
             if (preload_resource['url'].indexOf('http') !== 0) {
