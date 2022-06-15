@@ -25,6 +25,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isOpen": true,
                             "isEnabled": true,
                             "url": "http://"
+			}]
                     }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
