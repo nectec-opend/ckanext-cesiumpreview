@@ -66,7 +66,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                     config["initSources"][0]['homeCamera']['north'] = extent[3];
                 }
             }
-            var zero_item = config["initSources"][0]['catalog'][0]['items'][0];
+            var zero_item = config["initSources"][0]['catalog'][0]['members'][0];
 
             zero_item['url'] = preload_resource['url'];
             if (preload_resource['url'].indexOf('http') !== 0) {
