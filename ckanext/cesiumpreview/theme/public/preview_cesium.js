@@ -26,7 +26,17 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isEnabled": true,
                             "url": "http://"
 			}]
-                    }],
+                    },{
+            "id": "810be172e072",
+            "type": "wms-group",
+            "name": "ประชากรและสำมะโนประชากร",
+            "items": [{
+                "type": "wms",
+                "name": "จำนวนประชากรในประเทศไทย (2562)",
+                "id": "zrPtHVJcPi",
+                "url": "https://data.opendevelopmentmekong.net/geoserver/ODMekong/populationthailand_th/wms"
+            }]
+        }],
                     "catalogIsUserSupplied": true,
 		    "initializationUrls": ["https://vmcatalog.nso.go.th/init/simple.json"],
                     "homeCamera": {
