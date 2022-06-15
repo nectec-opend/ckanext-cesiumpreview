@@ -24,19 +24,13 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isOpen": true,
                             "isEnabled": true,
                             "url": "http://"
+                    }]
                     },
 		    {
 	    		"type": "esri-mapServer-group",
     	    		"name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
 	    		"url": "https://gisportal.dmr.go.th/arcgis/rest/services/HAZARD/LANDSLIDE_SUSCEPTIBILITY/MapServer/0"
-	    	   },    
-        	   {
-            		"id": "6ada988252b5",
-            		"type": "sdmx-group",
-            		"name": "Pacific Data Hub",
-            		"url": "https://stats-nsi-stable.pacificdata.org/rest"
-        	   }]
-                    }],
+	    	   }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
                         "north": 83,
