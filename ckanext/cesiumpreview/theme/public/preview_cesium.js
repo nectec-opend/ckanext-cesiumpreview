@@ -25,7 +25,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isEnabled": true,
                             "url": "http://"
                         },
-		        ,{
+		        {
             "id": "58b57301b7e0",
             "type": "esri-group",
             "name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
