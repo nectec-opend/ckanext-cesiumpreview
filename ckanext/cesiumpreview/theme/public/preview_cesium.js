@@ -11,21 +11,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             var config = {
                 "version": "0.0.03",
                 "initSources": [{
-                    "catalog": [{
-                        "type": "group",
-                        "name": "User-Added Data",
-                        "description": "The group for data that was added by the user via the Add Data panel.",
-                        "isUserSupplied": true,
-                        "isOpen": true,
-                        "items": [{
-                            "type": "kml",
-                            "name": "User Data",
-                            "isUserSupplied": true,
-                            "isOpen": true,
-                            "isEnabled": true,
-                            "url": "http://"
-                        }]
-                    },
+                    "catalog": [
 	            {
             "id": "810be172e072",
             "type": "wms-group",
