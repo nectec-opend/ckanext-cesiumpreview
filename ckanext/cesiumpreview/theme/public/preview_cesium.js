@@ -24,7 +24,6 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isOpen": true,
                             "isEnabled": true,
                             "url": "http://"
-                    }]
                     },
 		    {
 	             	"id": "6ada988252b4",
@@ -37,7 +36,8 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             		"type": "sdmx-group",
             		"name": "Pacific Data Hub",
             		"url": "https://stats-nsi-stable.pacificdata.org/rest"
-        	   }],
+        	   }]
+                    }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
                         "north": 83,
