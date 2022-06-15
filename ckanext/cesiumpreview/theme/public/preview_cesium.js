@@ -13,16 +13,19 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                 "initSources": [{
                     "catalog": [
 	            {
-            "id": "810be172e072",
-            "type": "wms-group",
-            "name": "ประชากรและสำมะโนประชากร",
-            "members": [{
-                "type": "wms",
-                "name": "จำนวนประชากรในประเทศไทย (2562)",
-                "id": "zrPtHVJcPi",
-                "url": "https://data.opendevelopmentmekong.net/geoserver/ODMekong/populationthailand_th/wms"
-            }]
-        }],
+                        "type": "group",
+                        "name": "User-Added Data",
+                        "description": "The group for data that was added by the user via the Add Data panel.",
+                        "isUserSupplied": true,
+                        "isOpen": true,
+                        "members": [{
+                            "type": "kml",
+                            "name": "User Data",
+                            "isUserSupplied": true,
+                            "isOpen": true,
+                            "isEnabled": true,
+                            "url": "http://"
+                    }],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
                         "north": 83,
