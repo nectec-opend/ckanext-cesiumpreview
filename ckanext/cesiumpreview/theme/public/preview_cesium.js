@@ -27,7 +27,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "url": "http://"
 			},{
                 "type": "wms",
-                "name": "จำนวนประชากรในประเทศไทย (2562)",
+                "name": "จำนวนประชากรในประเทศไทย (2564)",
                 "id": "zrPtHVJcPi",
                 "url": "https://data.opendevelopmentmekong.net/geoserver/ODMekong/populationthailand_th/wms"
             },{
