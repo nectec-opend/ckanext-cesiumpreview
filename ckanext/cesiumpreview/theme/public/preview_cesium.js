@@ -26,10 +26,9 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "url": "http://"
                     },
 		    {
-	             	"id": "6ada988252b4",
-	    		"type": "sdmx-group",
-    	    		"name": "TNSO Data Hub",
-	    		"url": "https://ns1-oshub.nso.go.th/rest"
+	    		"type": "esri-mapServer-group",
+    	    		"name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
+	    		"url": "https://gisportal.dmr.go.th/arcgis/rest/services/HAZARD/LANDSLIDE_SUSCEPTIBILITY/MapServer/0"
 	    	   },    
         	   {
             		"id": "6ada988252b5",
