@@ -52,6 +52,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             			"url": "https://ns1-oshub.nso.go.th/rest"
         	     },
 		    ],
+		    "initializationUrls": ["https://vmcatalog.nso.go.th/init/simple.json"],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
                         "north": 83,
