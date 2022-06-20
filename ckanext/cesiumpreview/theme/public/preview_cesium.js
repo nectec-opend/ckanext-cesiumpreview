@@ -31,6 +31,12 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                 		"id": "zrPtHVJcPi",
                 		"url": "https://data.opendevelopmentmekong.net/geoserver/ODMekong/populationthailand_th/wms"
            		},{
+            			"id": "6ada988252b4",
+            			"type": "sdmx-group",
+            			"name": "TNSO Data Hub",
+            			"url": "https://ns1-oshub.nso.go.th/rest"
+        		},
+				  {
             			"id": "58b57301b7e0",
             			"type": "esri-group",
             			"name": "พื้นที่อ่อนไหวต่อการเกิดแผ่นดินถล่ม",
