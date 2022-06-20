@@ -24,18 +24,13 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isUserSupplied": true,
                             "isOpen": true,
                             "isEnabled": true,
-                            "url": "https://ns1-oshub.nso.go.th/rest"
+                            "url": "http://"
 			},{
                             "type": "wms",
 				"name": "จำนวนประชากรในประเทศไทย (2564)",
                 		"id": "zrPtHVJcPi",
                 		"url": "https://data.opendevelopmentmekong.net/geoserver/ODMekong/populationthailand_th/wms"
-           		},{
-            			"id": "6ada988252b4",
-            			"type": "sdmx-group",
-            			"name": "TNSO Data Hub",
-            			"url": "https://ns1-oshub.nso.go.th/rest"
-        		},
+           		},
 				  {
             			"id": "58b57301b7e0",
             			"type": "esri-group",
@@ -44,12 +39,18 @@ ckan.module('cesiumpreview', function (jQuery, _) {
         	    }]
                     },
 		    {
-            		"type": "esri-mapServer-group",
-        	    	"name": "Catchment Scale Land Use",
-	            	"id": "354db2f2",
-            		"url": "https://www.asris.csiro.au/arcgis/rest/services/abares/clum_50m_2018/MapServer",
-            		"forceProxy": true
-		    }
+            			"type": "esri-mapServer-group",
+        	    		"name": "Catchment Scale Land Use",
+	            		"id": "354db2f2",
+            			"url": "https://www.asris.csiro.au/arcgis/rest/services/abares/clum_50m_2018/MapServer",
+            			"forceProxy": true
+		    },
+		    {
+            			"id": "6ada988252b4",
+            			"type": "sdmx-group",
+            			"name": "TNSO Data Hub",
+            			"url": "https://ns1-oshub.nso.go.th/rest"
+        	     },
 		    ],
                     "catalogIsUserSupplied": true,
                     "homeCamera": {
