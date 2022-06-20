@@ -24,7 +24,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isUserSupplied": true,
                             "isOpen": true,
                             "isEnabled": true,
-                            "url": "http://"
+                            "url": "https://ns1-oshub.nso.go.th/rest"
 			},{
                             "type": "wms",
 				"name": "จำนวนประชากรในประเทศไทย (2564)",
