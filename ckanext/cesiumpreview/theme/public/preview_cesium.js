@@ -11,7 +11,8 @@ ckan.module('cesiumpreview', function(jQuery, _) {
             var config = {
                 "version": "0.0.03",
                 "initSources": [{
-                    "catalog": [{
+                    "catalog": [
+                        {
                             "type": "esri-mapServer-group",
                             "name": "Catchment Scale Land Use",
                             "id": "354db2f2",
