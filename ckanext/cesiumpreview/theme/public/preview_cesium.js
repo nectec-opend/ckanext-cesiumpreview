@@ -51,7 +51,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                     "isEnabled": true,
                     "isShown": true,
                     "zoomOnEnable": true,
-                    "url": "http://"
+                    "url": "https://vmcatalog.nso.go.th/init/catalog.json"
                 }
                 var lang = $('html').attr('lang') || 'en';
                 var country_code = $('body').attr('class') || 'default';
