@@ -10,6 +10,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
 
             var config = {
                 "version": "0.0.03",
+		"initializationUrls": ["https://vmcatalog.nso.go.th/init/catalog.json"];
                 "initSources": [{
                     "catalog": [
 		    {
