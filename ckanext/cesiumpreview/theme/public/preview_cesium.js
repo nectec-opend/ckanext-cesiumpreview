@@ -14,6 +14,13 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                 "initSources": [{
                     "catalog": [
 		    {
+			    "id": "M0GDcatalogLibrary",
+			    "name": "แผนที่ดิจิทัลจากระบบบัญชีข้อมูลภาครัฐ- สถิติรายสาขา 21 กลุ่ม",
+			    "type": "terria-reference",
+			    "isGroup": true,
+			    "url": "https://vmcatalog.nso.go.th/catalog2/GDcatalogindex.json"
+	    	    }
+		    {
                         "type": "group",
                         "name": "User-Added Data",
                         "description": "The group for data that was added by the user via the Add Data panel.",
@@ -74,8 +81,8 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             }
 
             config["initSources"][0]['catalog'][0]['items'][0]['url'] = preload_resource['url'];
-                if (preload_resource['url'].indexOf('http') !== 0) {
-                    config["initSources"][0]['catalog'][0]['items'][0]['url'] = "http:" + preload_resource['url'];
+                if (preload_resource['url'].indexOf('https') !== 0) {
+                    config["initSources"][0]['catalog'][0]['items'][0]['url'] = "https:" + preload_resource['url'];
                 }
             config["initSources"][0]['catalog'][0]['items'][0]['type'] = preload_resource['format'].toLowerCase();
 
