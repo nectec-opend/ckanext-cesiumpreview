@@ -10,17 +10,11 @@ ckan.module('cesiumpreview', function (jQuery, _) {
 
             var config = {
                 "version": "0.0.03",
-		"workbench": ["https://vmcatalog.nso.go.th/init/catalog.json"];
-                "initSources": [{
-                    "catalog": [
-		    {
-			    "id": "M0GDcatalogLibrary",
-			    "name": "แผนที่ดิจิทัลจากระบบบัญชีข้อมูลภาครัฐ- สถิติรายสาขา 21 กลุ่ม",
-			    "type": "terria-reference",
-			    "isGroup": true,
-			    "url": "https://vmcatalog.nso.go.th/catalog2/GDcatalogindex.json"
-	    	    }
-		    {
+                "initSources": [
+		      	"init/catalog.json",
+		     {
+                    	"catalog": [
+		     {
                         "type": "group",
                         "name": "User-Added Data",
                         "description": "The group for data that was added by the user via the Add Data panel.",
@@ -32,7 +26,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "isUserSupplied": true,
                             "isOpen": true,
                             "isEnabled": true,
-                            "url": "http://"
+                            "url": "https://vmcatalog.nso.go.th/init/catalog.json"
                         }]
                     }],
                     "catalogIsUserSupplied": true,
