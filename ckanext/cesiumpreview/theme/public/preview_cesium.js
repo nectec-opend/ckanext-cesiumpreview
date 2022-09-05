@@ -11,7 +11,6 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             var config = {
                 "version": "0.0.03",
                 "initSources": [
-		      	"init/catalog.json",
 		     {
                     	"catalog": [
 		     {
