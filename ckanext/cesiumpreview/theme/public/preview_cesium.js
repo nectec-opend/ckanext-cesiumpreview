@@ -21,9 +21,12 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                         "isOpen": true,
                         "items": [{
                             "type": "kml",
-                            "name": "User Data",
+                            "name": "ข้อมูลผู้ใช้กำหนดเอง",
                             "isUserSupplied": true,
                             "isOpen": true,
+			    "hideSource": true,
+                            "show":true,
+                            "zoomOnAddToWorkbench": true,	
                             "isEnabled": true,
                             "url": "https://vmcatalog.nso.go.th/init/catalog.json"
                         }]
