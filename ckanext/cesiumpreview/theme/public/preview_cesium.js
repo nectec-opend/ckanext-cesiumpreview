@@ -109,6 +109,18 @@ ckan.module('cesiumpreview', function (jQuery, _) {
             }
             config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] = preload_resource['format'].toLowerCase();
 
+            if (config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] == 'wms' || config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] == 'wfs') {
+                // if wms_layer specified in resource, display that layer/layers by default
+                if (typeof preload_resource['wms_layer'] != 'undefined' && preload_resource['wms_layer'] != '') {
+                    config["initializationUrls"][0]['catalog'][0]['members'][0]['layers'] = preload_resource['wms_layer'];
+                } else {
+                    config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] = config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] + '-getCapabilities';
+                }
+            }
+            if (config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] == 'arcgis rest api') {
+                config["initializationUrls"][0]['catalog'][0]['members'][0]['type'] = 'esri-mapServer-group';
+            }
+
 // original code
 
             config["initSources"][0]['catalog'][0]['items'][0]['url'] = preload_resource['url'];
