@@ -13,24 +13,15 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                 "initSources": [
 		     {
                     	"catalog": [
-		     {
-                        "type": "group",
-                        "name": "User-Added Data",
-                        "description": "The group for data that was added by the user via the Add Data panel.",
-                        "isUserSupplied": false,
-                        "isOpen": true,
-                        "items": [{
-                            "type": "kml",
-                            "name": "ข้อมูลผู้ใช้กำหนดเอง",
-                            "isUserSupplied": true,
+		     	{
+                            "id": "test1Flood",
+                            "type": "ersi-mapServer",
+                            "name": "พื้นที่น้ำท่วม",
+                            "description": "The group for data that was added by the user via the Add Data panel.",
                             "isOpen": true,
-			    "hideSource": true,
-                            "show":true,
-                            "zoomOnAddToWorkbench": true,	
-                            "isEnabled": true,
-                            "url": "https://"
-                        }]
-                    }],
+                            "url": "https://gistdaportal.gistda.or.th/data/rest/services/GWater/Gistda_water_flood_site/MapServer/9"
+                        }
+		    ],
                     "catalogIsUserSupplied": false,
                     "homeCamera": {
         		"north": 83,
