@@ -17,7 +17,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                         "type": "group",
                         "name": "User-Added Data",
                         "description": "The group for data that was added by the user via the Add Data panel.",
-                        "isUserSupplied": true,
+                        "isUserSupplied": false,
                         "isOpen": true,
                         "items": [{
                             "type": "kml",
@@ -28,10 +28,10 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                             "show":true,
                             "zoomOnAddToWorkbench": true,	
                             "isEnabled": true,
-                            "url": "https://vmcatalog.nso.go.th/init/catalog.json"
+                            "url": "https://"
                         }]
                     }],
-                    "catalogIsUserSupplied": true,
+                    "catalogIsUserSupplied": false,
                     "homeCamera": {
         		"north": 83,
         		"east": 135,
