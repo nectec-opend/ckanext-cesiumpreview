@@ -3,9 +3,9 @@ ckan.module('cesiumpreview', function (jQuery, _) {
     var options = '';
     var catalog_url = "";
     var explorer = false;
-    var vis_server = 'https://vmcatalog.nso.go.th';
+    var vis_server = 'https://geo.gdcatalog.go.th';
     var countryLatLongMapper = {
-	    "odc": {"lon": 105.0, "lat": 13.0},
+	"odc": {"lon": 105.0, "lat": 13.0},
         "odl": {"lon": 105.0, "lat": 18.0},
         "odmy": {"lon": 98.0, "lat": 22.0},
         "odv": {"lon": 106.266, "lat": 9.632},
