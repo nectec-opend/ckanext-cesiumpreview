@@ -419,7 +419,7 @@ ckan.module('cesiumpreview', function (jQuery, _) {
                 var encoded_config = encodeURIComponent(JSON.stringify(config));
                 var style2 = 'height: 600px; width: 100%; border: none;';
                 var display2 = 'allowFullScreen mozAllowFullScreen webkitAllowFullScreen';
-                var vis_server = 'https://vmcatalog.nso.go.th';
+                var vis_server = 'https://geo.gdcatalog.go.th';
     
                 var html = '<iframe src="' + vis_server + '#start=' + encoded_config + '" style="' + style2 + '" ' + display2 + '></iframe>';
     
